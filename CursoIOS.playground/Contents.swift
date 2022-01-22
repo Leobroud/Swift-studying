@@ -8,7 +8,7 @@ var nomes = ["1", "2", "3"]
 print(nomes[0])
 */
 
-//Loops - for
+                                                                    //Loops - for
 
 /*for i in 0..<6 {
     print("Número: " + String(i))
@@ -25,7 +25,7 @@ for comentario in comentarios {
 }
 */
 
-// While
+                                                                        // While
 
 
 /*
@@ -48,3 +48,30 @@ repeat {
 } while contador < 6
 
  */
+
+                                                                    //Funções
+// -> Int significa que a função irá retornar algo
+
+/*func multiplicar (numero1: Int, numero2: Int ) -> Int {
+    
+    return numero1 + numero2
+    
+}
+
+var numero: Int = multiplicar(numero1: 5,numero2: 5)
+
+numero += 2
+
+print(numero)
+
+func year (anoNascimento: Int, anoAtual: Int) -> Int {
+    return anoAtual - anoNascimento
+}
+
+
+var resultado: Int = year (anoNascimento: 1992, anoAtual: 2022)
+
+print("Sua idade é: " + String(resultado))
+ */
+
+
