@@ -74,4 +74,89 @@ var resultado: Int = year (anoNascimento: 1992, anoAtual: 2022)
 print("Sua idade é: " + String(resultado))
  */
 
+//                                                      CLASSES E OBJETOS
 
+/*
+ class Casa {
+    
+    //Atributos
+    var cor: String
+    
+    init(cor: String){
+        self.cor = cor
+    }
+    
+    //Métodos - Ações
+    func getCor() -> String {
+        return self.cor
+    }
+}
+
+// Criar o objeto
+var casa = Casa(cor: "Amarelo")
+casa.getCor()
+
+var casaDois = Casa(cor: "Azul")
+casaDois.getCor()
+*/
+
+/*
+class Cachorro {
+    
+    var corDoCachorro: String
+    
+    init(cor: String) {
+        self.corDoCachorro = cor
+    }
+    
+    func correr() -> String {
+        return "Ele corre"
+    }
+    
+    func latir() -> String {
+        return "Ele late"
+    }
+}
+
+var cachorro = Cachorro(cor: "marrom" )
+cachorro.correr()
+cachorro.latir()
+*/
+
+//                                                          HERANÇA
+
+
+/*
+class Animal {
+    
+    var cor = "Marron"
+    
+    func dormir() -> String {
+        return "dormir"
+    }
+
+}
+
+class Cachorro:Animal {
+    
+    func latir() -> String {
+            return "Latir"
+    }
+}
+
+
+class Passaro:Animal {
+    func voar() -> String {
+        return "Voar"
+    }
+}
+
+// criar objeto
+var cachorro = Cachorro()
+cachorro.dormir()
+cachorro.latir()
+
+var passaro = Passaro()
+passaro.dormir()
+passaro.voar()
+*/
