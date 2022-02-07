@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W5f-cF-85s">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Passar dados-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Passando_dados" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mdt-IF-3mc">
+                                <rect key="frame" x="124" y="411" width="166" height="160"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfF-zy-xnQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="160"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mxz-EQ-24e">
+                                                <rect key="frame" x="21" y="35.5" width="124" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdm-Rd-RXQ">
+                                                <rect key="frame" x="19" y="105.5" width="128" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Passar dados">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="crl-MO-JUQ" kind="show" identifier="enviarDados" id="vMg-h5-9YM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Mxz-EQ-24e" firstAttribute="leading" secondItem="xfF-zy-xnQ" secondAttribute="leading" constant="21" id="CRd-EF-rFb"/>
+                                            <constraint firstAttribute="trailing" secondItem="Mxz-EQ-24e" secondAttribute="trailing" constant="21" id="DvT-bF-vik"/>
+                                            <constraint firstItem="vdm-Rd-RXQ" firstAttribute="leading" secondItem="xfF-zy-xnQ" secondAttribute="leading" constant="19" id="OFI-Us-1Pb"/>
+                                            <constraint firstItem="vdm-Rd-RXQ" firstAttribute="top" secondItem="Mxz-EQ-24e" secondAttribute="bottom" constant="36" id="SkE-Wu-sBg"/>
+                                            <constraint firstAttribute="bottom" secondItem="vdm-Rd-RXQ" secondAttribute="bottom" constant="20" symbolic="YES" id="Y2E-ci-gFY"/>
+                                            <constraint firstAttribute="trailing" secondItem="vdm-Rd-RXQ" secondAttribute="trailing" constant="19" id="be7-bh-Pgc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mdt-IF-3mc" secondAttribute="trailing" constant="124" id="0zG-He-PPe"/>
+                            <constraint firstItem="Mdt-IF-3mc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="323" id="MvW-qQ-Ip8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mdt-IF-3mc" secondAttribute="bottom" constant="291" id="gjc-ab-qE9"/>
+                            <constraint firstItem="Mdt-IF-3mc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="rU4-47-RUb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Passar dados" id="V05-iU-jvL"/>
+                    <connections>
+                        <outlet property="nomeCampo" destination="Mxz-EQ-24e" id="qjG-n1-Nxg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969.56521739130437" y="109.82142857142857"/>
+        </scene>
+        <!--Detalhes View Controller-->
+        <scene sceneID="tJs-Xe-4gM">
+            <objects>
+                <viewController id="crl-MO-JUQ" customClass="DetalhesViewController" customModule="Passando_dados" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dk8-o4-d2t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sHz-0p-cAH">
+                                <rect key="frame" x="0.0" y="418" width="414" height="61"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8O6-G7-tV7">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1p-uS-Nnf">
+                                                <rect key="frame" x="20" y="20.5" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="J1p-uS-Nnf" firstAttribute="centerX" secondItem="8O6-G7-tV7" secondAttribute="centerX" id="0Cj-x4-Slq"/>
+                                            <constraint firstItem="J1p-uS-Nnf" firstAttribute="centerY" secondItem="8O6-G7-tV7" secondAttribute="centerY" id="B5B-4W-NuR"/>
+                                            <constraint firstItem="J1p-uS-Nnf" firstAttribute="leading" secondItem="8O6-G7-tV7" secondAttribute="leading" constant="20" id="elq-rm-jS8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vCo-ch-AQM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sHz-0p-cAH" firstAttribute="top" secondItem="vCo-ch-AQM" secondAttribute="top" constant="330" id="EAw-Tz-aHr"/>
+                            <constraint firstItem="sHz-0p-cAH" firstAttribute="trailing" secondItem="vCo-ch-AQM" secondAttribute="trailing" id="jNx-gc-xcZ"/>
+                            <constraint firstItem="sHz-0p-cAH" firstAttribute="leading" secondItem="vCo-ch-AQM" secondAttribute="leading" id="r52-Sb-Zf8"/>
+                            <constraint firstItem="vCo-ch-AQM" firstAttribute="bottom" secondItem="sHz-0p-cAH" secondAttribute="bottom" constant="383" id="zDm-cX-4BL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7vq-I4-Q43"/>
+                    <connections>
+                        <outlet property="resultadoLEgenda" destination="J1p-uS-Nnf" id="69T-Ph-GXV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wHs-tc-l03" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1766.6666666666667" y="109.82142857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AM9-KL-0S7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W5f-cF-85s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7b9-D3-bzJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7BA-px-0HP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Sm-It-eQq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
