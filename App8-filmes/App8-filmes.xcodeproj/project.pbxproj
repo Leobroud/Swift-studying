@@ -14,6 +14,7 @@
 		2144115D27BBF118004FCDC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2144115C27BBF118004FCDC4 /* Assets.xcassets */; };
 		2144116027BBF118004FCDC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2144115E27BBF118004FCDC4 /* LaunchScreen.storyboard */; };
 		2144116827BBF1E2004FCDC4 /* Filme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144116727BBF1E2004FCDC4 /* Filme.swift */; };
+		2144116A27BC39D5004FCDC4 /* FilmeCelula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144116927BC39D5004FCDC4 /* FilmeCelula.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2144115F27BBF118004FCDC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2144116127BBF118004FCDC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2144116727BBF1E2004FCDC4 /* Filme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filme.swift; sourceTree = "<group>"; };
+		2144116927BC39D5004FCDC4 /* FilmeCelula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmeCelula.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2144115727BBF116004FCDC4 /* ViewController.swift */,
 				2144116727BBF1E2004FCDC4 /* Filme.swift */,
 				2144115927BBF116004FCDC4 /* Main.storyboard */,
+				2144116927BC39D5004FCDC4 /* FilmeCelula.swift */,
 				2144115C27BBF118004FCDC4 /* Assets.xcassets */,
 				2144115E27BBF118004FCDC4 /* LaunchScreen.storyboard */,
 				2144116127BBF118004FCDC4 /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2144115827BBF116004FCDC4 /* ViewController.swift in Sources */,
+				2144116A27BC39D5004FCDC4 /* FilmeCelula.swift in Sources */,
 				2144115427BBF116004FCDC4 /* AppDelegate.swift in Sources */,
 				2144115627BBF116004FCDC4 /* SceneDelegate.swift in Sources */,
 				2144116827BBF1E2004FCDC4 /* Filme.swift in Sources */,
