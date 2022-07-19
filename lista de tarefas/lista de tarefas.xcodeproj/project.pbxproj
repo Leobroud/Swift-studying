@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		216DB8992886FAA800CA9322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216DB8982886FAA800CA9322 /* AppDelegate.swift */; };
 		216DB89B2886FAA800CA9322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216DB89A2886FAA800CA9322 /* SceneDelegate.swift */; };
-		216DB89D2886FAA800CA9322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216DB89C2886FAA800CA9322 /* ViewController.swift */; };
 		216DB8A02886FAA800CA9322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 216DB89E2886FAA800CA9322 /* Main.storyboard */; };
 		216DB8A22886FAAA00CA9322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 216DB8A12886FAAA00CA9322 /* Assets.xcassets */; };
 		216DB8A52886FAAA00CA9322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 216DB8A32886FAAA00CA9322 /* LaunchScreen.storyboard */; };
+		216DB8AD2887087B00CA9322 /* TarefasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216DB8AC2887087B00CA9322 /* TarefasTableViewController.swift */; };
+		216DB8AF288709F300CA9322 /* CadastroTarefaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216DB8AE288709F300CA9322 /* CadastroTarefaViewController.swift */; };
+		216DB8B128870BD300CA9322 /* TarefaUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216DB8B028870BD300CA9322 /* TarefaUserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		216DB8952886FAA800CA9322 /* lista de tarefas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lista de tarefas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		216DB8982886FAA800CA9322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		216DB89A2886FAA800CA9322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		216DB89C2886FAA800CA9322 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		216DB89F2886FAA800CA9322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		216DB8A12886FAAA00CA9322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		216DB8A42886FAAA00CA9322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		216DB8A62886FAAA00CA9322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		216DB8AC2887087B00CA9322 /* TarefasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefasTableViewController.swift; sourceTree = "<group>"; };
+		216DB8AE288709F300CA9322 /* CadastroTarefaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroTarefaViewController.swift; sourceTree = "<group>"; };
+		216DB8B028870BD300CA9322 /* TarefaUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaUserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				216DB8982886FAA800CA9322 /* AppDelegate.swift */,
+				216DB8AC2887087B00CA9322 /* TarefasTableViewController.swift */,
+				216DB8B028870BD300CA9322 /* TarefaUserDefaults.swift */,
+				216DB8AE288709F300CA9322 /* CadastroTarefaViewController.swift */,
 				216DB89A2886FAA800CA9322 /* SceneDelegate.swift */,
-				216DB89C2886FAA800CA9322 /* ViewController.swift */,
 				216DB89E2886FAA800CA9322 /* Main.storyboard */,
 				216DB8A12886FAAA00CA9322 /* Assets.xcassets */,
 				216DB8A32886FAAA00CA9322 /* LaunchScreen.storyboard */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				216DB89D2886FAA800CA9322 /* ViewController.swift in Sources */,
+				216DB8AF288709F300CA9322 /* CadastroTarefaViewController.swift in Sources */,
 				216DB8992886FAA800CA9322 /* AppDelegate.swift in Sources */,
+				216DB8B128870BD300CA9322 /* TarefaUserDefaults.swift in Sources */,
+				216DB8AD2887087B00CA9322 /* TarefasTableViewController.swift in Sources */,
 				216DB89B2886FAA800CA9322 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
